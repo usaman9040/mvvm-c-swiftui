@@ -18,10 +18,9 @@
 - This `HasService` protocol confirm the get property of Service class
 - Each ViewModel access this service by using shared instances of `AppDependencies` with the following pattern
 
-    typealias Dependencies = HasSomeService
+    ``typealias Dependencies = HasSomeService``
     
-    init(dependencies: Dependencies = AppDependencies.shared) {
-        self.someService = dependencies.someService
-        dataModel = []
-        initialiseData()
-    }
+    ``init(dependencies: Dependencies = AppDependencies.shared) {``
+        ``self.someService = dependencies.someService``
+        ``initialiseData()``
+    ``}``
